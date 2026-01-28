@@ -5,8 +5,8 @@ export const TMDB_CONFIG = {
     headers: {
         accept: 'application/json',
         Authorization: `Bearer ${process.env.EXPO_PUBLIC_MOVIE_API_KEY}`,
-    }
-}
+    },
+};
 
 
 export const fetchMovies = async ({query}: {query: string}) => {
@@ -30,7 +30,17 @@ export const fetchMovies = async ({query}: {query: string}) => {
     const data = await response.json();
 
     return data.results;
-}
+};
+
+// export const fetchMovieDetails = async (
+//     movieId: string
+// ): Promise<MovieDetails> => {
+//     try{
+//         const response = await fetch (
+//             `${TMDB_CONFIG.BASE_URL}/movie/${movieId}`,
+//         )
+//     }
+// }
 
 
 
