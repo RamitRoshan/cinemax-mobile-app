@@ -1,3 +1,5 @@
+# **Setting up Tailwind CSS in React Native with the help of `NativeWind`**
+
 There are still some things we got to set up such as additional  packages for styling and configuration that make your JOB easier later on.
 
 - One of those  packages is : `NativeWind`.
